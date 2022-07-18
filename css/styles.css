@@ -34,6 +34,11 @@ ul {
 a {
   text-decoration: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -125,12 +130,21 @@ a {
 }
 /* hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: var(--dark-fon);
   text-align: center;
 }
 .hero-title {
+  display: block;
   margin-top: 0;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 696px;
+
   color: var(--white-color);
 
   font-weight: 900;
@@ -238,9 +252,11 @@ a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
+.about-comand {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .name-comand {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -250,7 +266,7 @@ a {
 }
 .work-comand {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 
   font-size: 16px;
   line-height: 1.2;
@@ -293,12 +309,14 @@ a {
   display: flex;
   justify-content: center;
 
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .portfolio-filters > .item + .item {
   margin-left: 8px;
 }
 .button-portfolio {
+  padding: 6px 22px;
+
   color: var(--title-text-color);
   background-color: var(--comand-fon);
   border: 1px solid transparent;
@@ -332,10 +350,7 @@ a {
   margin-bottom: 30px;
 }
 .portfolio-caption {
-  /* margin-left: 24px;
-  margin-top: 20px; */
-  padding-left: 24px;
-  padding-top: 20px;
+  padding: 20px 24px;
 
   border: 1px solid #eeeeee;
   border-top: none;
